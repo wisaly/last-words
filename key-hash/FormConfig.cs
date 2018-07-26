@@ -44,7 +44,7 @@ namespace key_hash
             {
                 string hs2 = GetHash.hash(hs + ps.toString(), editSalt2.Text);
                 cnt++;
-                if (sw.ElapsedMilliseconds > 10000)
+                if (sw.ElapsedMilliseconds > 3000)
                 {
                     sw.Stop();
                     break;

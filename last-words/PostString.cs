@@ -8,7 +8,9 @@ namespace last_words
     public class PostString
     {
         List<int> s_ = new List<int>();
-        string a_ = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*-+=;:|,()<>[]?.";
+        //string a_ = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*-+=;:|,()<>[]?.";
+        string a_ = "!@#$%^&*-+=;:|,()<>[]?.";
+        //string a_ = "0123456789";
         public PostString()
         {
         }
@@ -66,7 +68,7 @@ namespace last_words
             decimal d = 0;
             for (int i = 0; i < s_.Count; i++)
             {
-                d = d * a_.Length + s_[i];
+                d = d + s_[i] * (decimal)Math.Pow(a_.Length, i);
             }
             return d;
         }
