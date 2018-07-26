@@ -8,7 +8,7 @@ namespace last_words
     public class PostString
     {
         List<int> s_ = new List<int>();
-        string a_ = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*-+=;:|,()<>[]?.";
+        string a_ = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*-+=;:|,()<>[]?.";
         public PostString()
         {
         }
